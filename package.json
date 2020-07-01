@@ -1,6 +1,6 @@
 {
   "name": "trabajo-express",
-  "version": "0.0.1",
+  "version": "0.3.0",
   "description": "Trabajo integrador de lo aprendido hasta el momento",
   "main": "app.js",
   "scripts": {

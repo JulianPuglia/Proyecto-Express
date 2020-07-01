@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.listen(1212, () => {console.log('El servirdor esta funcionando en el puerto 1212')})
+app.listen(1212, () => console.log('El servirdor esta funcionando en el puerto 1212'))
 
 const rutaHome = require('./routes/home');
 const rutaSucursales = require('./routes/sucursales');
