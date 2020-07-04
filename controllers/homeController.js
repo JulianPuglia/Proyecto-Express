@@ -1,5 +1,4 @@
 const fs = require('fs');
-const sucursales = require('./sucursalesController');
 let db = JSON.parse(fs.readFileSync('./data/concesionarias.json', 'utf-8'));
 
 const home ={
