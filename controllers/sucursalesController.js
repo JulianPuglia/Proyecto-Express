@@ -33,6 +33,9 @@ const sucursales ={
                 res.write('Total de autos disponibles ' + autosCantidad.length)
                 res.write('\n')
                 res.write('-----------------------------\n')
+                autosCantidad.forEach((auto)=>{res.write(`\n -${auto.marca.toUpperCase()}  ${auto.modelo.toUpperCase()}  ${auto.anio}  ${auto.color}
+                `)})
+                res.write('\n')
                 res.write('\n-----------------------------------------------------------------------------------------------------\n')
                 res.write('Nos encontramos en: ' + sucursal.direccion)
                 res.write('\n------------------------------------------------------------------------------------------------------\n')
