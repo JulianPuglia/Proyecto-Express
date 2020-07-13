@@ -4,6 +4,7 @@ let db = JSON.parse(fs.readFileSync('./data/concesionarias.json', 'utf-8'));
 let titulo = 'Bienvenido a nuestra seccion de sucursales';
 const sucursales ={ 
     listadoSucursales: (req, res) => {
+        res.set({'content-type':'text/plain;charset=utf-8'});
         res.write(`${titulo.toUpperCase()}\n`);
         res.write('\n');
         db.forEach((sucursal)=>{
@@ -20,6 +21,7 @@ const sucursales ={
     detallesSucursales: (req, res) => {
         let idSucursal = req.params.sucursal;
         let autosCantidad =[];
+        res.set({'content-type':'text/plain;charset=utf-8'});
         res.write(`///////////Concesionarias DH\\\\\\\\\\\\\\\\`);
         res.write('\n\n')
         db.forEach((sucursal) =>{
